@@ -6,6 +6,7 @@ import (
 	"github.com/ryo-ymd/go-test/controller"
 )
 
+// Serverはルーティングなどの設定を行う
 func Init() {
 	r := router()
 	r.Run()

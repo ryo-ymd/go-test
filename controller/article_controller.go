@@ -8,9 +8,9 @@ import (
 	"github.com/ryo-ymd/go-test/service"
 )
 
-type Controller struct {
-}
+type Controller struct {}
 
+// ArticleControllerはArticleのアクションを定義する
 func (pc Controller) Index(c *gin.Context) {
 	var s article.Service
 

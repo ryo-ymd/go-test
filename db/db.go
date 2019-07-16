@@ -10,6 +10,7 @@ var (
 	err error
 )
 
+// dbはデータベースへの接続(MostyCMS)を行う
 func Init() {
 	DBMS := "mysql"
 	USER := "root"
