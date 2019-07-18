@@ -5,7 +5,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/ryo-ymd/go-test/service"
+	"github.com/ryo-ymd/go-test/service/article"
 )
 
 type Controller struct {}

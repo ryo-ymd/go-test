@@ -11,10 +11,10 @@ type Article entity.Article
 
 // ArticleServiceはArticleのDB操作を行う
 func (s Service) GetAll() ([]Article, error) {
-	db := db.GetDB()
+	database := db.GetDB()
 	var a []Article
 
-	if err := db.Preload("ArticleUnits").Find(&a).Error; err != nil {
+	if err := database.Preload("ArticleUnits").Find(&a).Error; err != nil {
 		return nil, err
 	}
 
